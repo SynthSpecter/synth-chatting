@@ -1,1 +1,1 @@
-Just a prototype, might upgrade et improve later
+Just a prototype, might upgrade and improve later
