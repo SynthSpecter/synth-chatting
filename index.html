@@ -5,22 +5,53 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Chat Synthwave</title>
+   <!-- Importation des polices Google Fonts -->
+   <!-- Importing Google Fonts -->
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
-   <link rel="stylesheet" href="styles.css">
+   <!-- Lien vers notre fichier CSS externe -->
+   <!-- Link to our external CSS file -->
+   <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-   <div id="chat-container">
-      <div id="messages"></div>
-      <div id="input-container">
-         <input type="text" id="message-input" placeholder="Tapez votre message...">
-         <button id="send-button">Envoyer</button>
+   <!-- Section de configuration de l'utilisateur -->
+   <!-- User setup section -->
+   <div id="user-setup">
+      <div>
+         <h2>Bienvenue dans le Chat Synthwave</h2>
+         <!-- Welcome to the Synthwave Chat -->
+         <input type="text" id="username-input" placeholder="Entrez votre pseudo">
+         <!-- Enter your username -->
+         <button id="start-chat">Commencer</button>
+         <!-- Start -->
       </div>
    </div>
 
-   <!-- Firebase SDK (version 9.23.0) -->
-   <script type="module" src="script.js"></script>
+   <!-- Conteneur principal du chat -->
+   <!-- Main chat container -->
+   <div id="chat-container">
+      <!-- Zone d'affichage des messages -->
+      <!-- Message display area -->
+      <div id="messages"></div>
+      <!-- Conteneur pour la saisie des messages -->
+      <!-- Container for message input -->
+      <div id="input-container">
+         <input type="text" id="message-input" placeholder="Tapez votre message...">
+         <!-- Type your message... -->
+         <button id="send-button">Envoyer</button>
+         <!-- Send -->
+      </div>
+   </div>
+
+   <!-- Effets sonores pour le chat -->
+   <!-- Sound effects for the chat -->
+   <audio id="message-sound" src="assets/sounds/message.mp3"></audio>
+   <audio id="send-sound" src="assets/sounds/send.mp3"></audio>
+
+   <!-- Lien vers notre fichier JavaScript externe -->
+   <!-- Link to our external JavaScript file -->
+   <script src="scripts/script.js"></script>
 </body>
 
 </html>
