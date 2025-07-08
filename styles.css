@@ -1,10 +1,13 @@
-/* Importation des polices Google Fonts / Importing Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* Custom font import */
+/* Importation de la police personnalisée */
+@font-face {
+  font-family: 'Audiowide';
+  src: url('./Audiowide-Regular.ttf') format('truetype');
+}
 
 /* Style de base pour le corps de la page / Basic style for the body */
 body {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Audiowide', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +71,7 @@ body::before {
 
 #user-setup h2 {
   color: #fff;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Audiowide', sans-serif;
   margin-bottom: 20px;
 }
 
@@ -81,7 +84,7 @@ body::before {
   border: 1px solid #0ff;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Audiowide', sans-serif;
 }
 
 /* Style pour le bouton de démarrage du chat / Style for start chat button */
@@ -92,7 +95,7 @@ body::before {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Audiowide', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: all 0.3s ease;
@@ -182,7 +185,7 @@ body::before {
   background: rgba(26, 26, 46, 0.7);
   border: 1px solid rgba(0, 255, 255, 0.2);
   animation: fadeIn 0.3s ease-out forwards;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Audiowide', sans-serif;
   line-height: 1.4;
   word-wrap: break-word;
 }
@@ -227,7 +230,7 @@ body::before {
   outline: none;
   background: rgba(26, 26, 46, 0.7);
   color: #fff;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Audiowide', sans-serif;
 }
 
 /* Style pour le placeholder du champ de saisie / Style for input field placeholder */
